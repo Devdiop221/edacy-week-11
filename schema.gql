@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type StudentsEntity {
+  id: String!
+  firstName: String!
+  lastName: String!
+  age: String!
+  email: String!
+  courses: [String!]!
+}
+
+type Query {
+  findAllStudents: [StudentsEntity!]!
+  findOneStudent(id: String!): StudentsEntity!
+}
